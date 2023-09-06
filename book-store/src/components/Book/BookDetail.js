@@ -7,7 +7,7 @@ const BookDetail = () => {
    console.log(id);
      useEffect(()=>{
        const fetchHandler=async()=>{
-         await axios.get(`http://localhost:5000/bboks/${id}`)
+         await axios.get(`http://localhost:5000/books/${id}`)
          .then((res)=>console.log(res.data));
        }
        fetchHandler();

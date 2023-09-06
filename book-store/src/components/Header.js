@@ -22,9 +22,10 @@ const Header = () => {
                     value={value} 
                     onChange={(e,val)=>setValue(val) }> 
                     {/* sx is css for right and  value=0 bydefault takes 0th tab and render it which change dynamically*/}
+                    <Tab   LinkComponent={NavLink} to="/" label="Home"/>
                          <Tab LinkComponent={NavLink} to="/add" label="Add product"/>
                          <Tab  LinkComponent={NavLink} to="/books" label="Books"/>
-                         <Tab   LinkComponent={NavLink} to="/about" label="About us"/>
+                        
 
                     </Tabs>
 

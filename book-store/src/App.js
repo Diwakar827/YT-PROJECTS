@@ -19,7 +19,7 @@ function App() {
       <Route path='/add' element={<AddBook/>}  exact />
       <Route path='/books' element={<Books/>}  exact />
       <Route path='/about' element={<About/>}  exact />
-      <Route path='/boooks/:id' element={<BookDetail></BookDetail>} exact></Route>
+      <Route path='/boooks/:id' element={<BookDetail></BookDetail>} exact></Route> {/* boooks   */}
 
 
 
