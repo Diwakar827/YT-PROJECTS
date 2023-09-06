@@ -8,7 +8,9 @@ app.use(express.json());
 app.use(cors());
 app.use('/books',router);
  // write / books
-mongoose.connect('mongodb://localhost:27017/bookStore', { 
+
+ //mongodb+srv://Diwakar123:Diwakar123@cluster0.j4niy.mongodb.net/doctorsApp -- mongodb://localhost:27017/bookStore
+mongoose.connect('mongodb+srv://Diwakar123:Diwakar123@cluster0.j4niy.mongodb.net/bookStore', { 
   useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("connected to database MONGO CONNECTION OPEN!!!")})
